@@ -62,13 +62,9 @@ In case of updating vehicles:
   For now I choose to follow the idea of having domain models that are not used in the controllers. The service layer handles the business logic and mapping from domain model to DTO.  
   Automapper is created in the startup.cs file.  
   
-  Project structure:  
-  I've put a lot of things in different projects.  
-  Especially for the Repository layer it is very usefull.  
-  In case of the repository layer it is very easy to create a nuget package of it and use it in other solutions.  
-  
+  DATABASE FIRST:  
   Because of having a database model in a file, I used entity framework database first.  
-  I would prefer code first, but in this case I didn;t use it because of the short period of time I had to develop this.  
+  I would prefer code first, but in this case I didn't use it. This is because of the short period of time I had to develop this.  
   
   
   
