@@ -24,7 +24,7 @@ namespace VWE.My.Tests
             var updateVehicle = new UpdateVehicleDTO()
             {
                 Color = "grey",
-                ConstructionYear = VehicleConstants.LOWEST_VALID_CONSTRUCTION_YEAR -1
+                ConstructionYear = VehicleConstants.LOWEST_VALID_CONSTRUCTION_YEAR
             };
 
             var validationContext = new ValidationContext(updateVehicle);

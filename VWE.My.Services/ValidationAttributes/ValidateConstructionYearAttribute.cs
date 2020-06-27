@@ -19,7 +19,7 @@ namespace VWE.My.Services.ValidationAttributes
         {
             var updateVehicle = (UpdateVehicleDTO)validationContext.ObjectInstance;
 
-            if (updateVehicle.ConstructionYear < VehicleConstants.LOWEST_VALID_CONSTRUCTION_YEAR || updateVehicle.ConstructionYear >= DateTime.Now.Year)
+            if (updateVehicle.ConstructionYear <= VehicleConstants.LOWEST_VALID_CONSTRUCTION_YEAR || updateVehicle.ConstructionYear >= DateTime.Now.Year)
             {
                 return new ValidationResult(string.Format(VehicleConstants.ERROR_NO_VALID_CONSTRUCTIONYEAR, VehicleConstants.LOWEST_VALID_CONSTRUCTION_YEAR, DateTime.Now.Year));
             }
