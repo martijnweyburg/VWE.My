@@ -20,6 +20,7 @@ In case of updating vehicles:
   - Just click on one and it will expand.
   - Click on "try it out". 
   - Now you can fill in the Url parameters and the form values (in case of the update function)
+  - Click on Execute. The result will appear.
     
   CONNECTION STRING:  
   The connection string (VWEDatabase) can be changed in: 
