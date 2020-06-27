@@ -36,7 +36,7 @@ In case of updating vehicles:
   - .NET Core entity framework: Database first
   - Automapper for mapping DTO files to Domain models and Vice versa
   
-  REPOSITORY PATERN:
+  REPOSITORY PATTERN:
   I've implemented a Repository pattern with a generic base repository for handling database transactions
   I also used a service layer between the controllers and the repositories. It is not really necessary if you look at the complexitiy of the business logic right now.
   But looking at the future when a project becomes more complex (complex business logic) it can be very handy.
