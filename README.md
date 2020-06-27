@@ -17,7 +17,7 @@ In case of updating vehicles:
   I used Swagger for testing purposes. This is very simple to use.
   - Start up the application in Visual studio
   - The UI of Swagger will be started. Here you can test the different functions.
-    Just click on one and it will expand
+    Just click on one and it will expand.
     Click on "try it out". Now you can fill in the Url parameters and the form values (in case of the update function)
     
   CONNECTION STRING:
