@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VWE.My.Web</name>
+    </assembly>
+    <members>
+        <member name="M:VWE.My.Web.Controllers.VehiclesController.GetByRegistrationNumber(System.String)">
+            <summary>
+            Gets a vehicle by registration number
+            </summary>
+            <param name="registrationNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VWE.My.Web.Controllers.VehiclesController.GetAll(VWE.My.Data.Models.VehiclePagingParams)">
+            <summary>
+            Get all vehicles from the database.
+            This REST call uses paging with a maximum of 10 records a page.
+            </summary>
+            <param name="pagingParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VWE.My.Web.Controllers.VehiclesController.Update(System.Int32,VWE.My.Services.ServiceModel.UpdateVehicleDTO)">
+            <summary>
+            Updates the color and the Construction date of a vehicle. 
+            The vehicle is found by Id.
+            </summary>
+            <param name="id"></param>
+            <param name="updateVehicle"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VWE.My.Web.Filters.ValidatorActionFilter">
+            <summary>
+            Filter for returning a result if one of the models in an incoming call does not pass validation.
+            </summary>
+        </member>
+        <member name="M:VWE.My.Web.Filters.ValidatorActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            executes the check for model validation
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="M:VWE.My.Web.Filters.ValidatorActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            After action is executed. Neeeded to implement this function according to the interface.
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+    </members>
+</doc>
