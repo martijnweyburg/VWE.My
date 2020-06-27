@@ -11,6 +11,9 @@ using VWE.My.Data.Models;
 
 namespace VWE.My.Web.Controllers
 {
+    /// <summary>
+    /// Controller for getting vehicle information and updating vehicle information
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class VehiclesController : ControllerBase
@@ -18,6 +21,11 @@ namespace VWE.My.Web.Controllers
         private readonly ILogger<VehiclesController> logger;
         private readonly IVehicleService vehicleService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="vehicleService"></param>
         public VehiclesController(ILogger<VehiclesController> logger, IVehicleService vehicleService)
         {
             this.logger = logger;
