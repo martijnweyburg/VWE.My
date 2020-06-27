@@ -13,7 +13,7 @@ In case of updating vehicles:
   For update I used the year as input (not an entire date). This means that the updated vehicle date will contain a new year, but still the old month and the old day.
       Update 2020-11-01 with 2015 as year will become 2015-11-01
       
-  
+ HOW TO RUN THE APPLICATION: 
   I used Swagger for testing purposes. This is very simple to use.
   - Start up the application in Visual studio
   - The UI of Swagger will be started. Here you can test the different functions.
