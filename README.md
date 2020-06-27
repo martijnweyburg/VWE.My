@@ -48,8 +48,8 @@ In case of updating vehicles:
   But in this case I choose not to. Not enough time and for now a bit of overkill.
   
   DEPENDENCY INJECTION:
-  I Used the dependency injection functionality of the .NET Core framework. Every Repository class and service class uses a interface that can be couples with the right class.
-  Every reporitory and service object is created in the startup.cs file.
+  I Used the dependency injection functionality of the .NET Core framework. Every Repository class and service class uses a interface that can be implemented on the right class.
+  Every reporitory and service object is created in the startup.cs file by using the interfaces.
   In this case it is very easy to implement different repository or service implementations in the future.
   Just add a new class, give it the same interface and load it in the start up.
   
