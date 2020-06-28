@@ -6,7 +6,11 @@ This is the repository with an API for
 - Getting a vehicle by registration number from a database
 - Updating a vehicle by id. 
 
-In case of updating vehicles:  
+GETTING ALL VEHICLES:  
+  - Paging returns a maximum of 10 records per call  
+    That means, if you give in 12 pages, it will only return 10 pages.  
+    
+IN CASE OF UPDATING VEHICLES:      
   You can update the color and the construction year of the vehicle.  
   The construction must be between 1885 and the current year.  
   That means: 1885 is not allowed and the current year is also not allowed.  
