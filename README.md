@@ -22,20 +22,22 @@ This is the repository with an API for
   the appsettings.json file.
   Project: VWE.My.Web  
 
-GETTING ALL VEHICLES:  
+GETTING ALL VEHICLES REST CALL:  
   - Paging returns a maximum of 10 records per call  
     That means: if you fill in 12 pages, it will only return 10 pages.  
     
-IN CASE OF UPDATING VEHICLES:      
+UPDATING VEHICLES REST CALL:      
   You can update the color and the construction year of the vehicle.  
-  The construction must be between 1885 and the current year.  
+  The construction year must be between 1885 and the current year.  
   That means: 1885 is not allowed and the current year is also not allowed.  
-  For update I used the year as input (not an entire date). This means that the updated vehicle date will contain a new year, but still the old month and the old day.  
-      Update 2020-11-01 with 2015 as year will become 2015-11-01  
+  For updating the construction date I used the year as input (not an entire date). This means that the updated vehicle date will contain a new year, but still contains the old   month and the old day.  
+  For instance: Update 2020-11-01 with 2015 as year will become 2015-11-01  
+  
   
   UNIT Testing:  
   This app contains a unittest project.
   VWE.My.Tests
+  I've mocked the repository objects, so we don't have a database dependency in our unittests.
   
   Technical details:  
   This app uses:
@@ -68,7 +70,7 @@ IN CASE OF UPDATING VEHICLES:
   I've used automapper in the service layer.  
   I know that many times it is used in the controllers.  
   For now I choose to follow the idea of having domain models that are not used in the controllers. The service layer handles the business logic and mapping from domain model to DTO.  
-  Automapper is created in the startup.cs file.  
+  Automapper is instantiated in the startup.cs file.  
   
   DATABASE FIRST:  
   Because of having a database model in a file, I used entity framework database first.  
