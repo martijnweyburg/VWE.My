@@ -69,7 +69,7 @@ UPDATING VEHICLES REST CALL:
   AUTOMAPPER:  
   I've used automapper in the service layer.  
   I know that many times it is used in the controllers.  
-  For now I choose to follow the idea of having domain models that are not used in the controllers. The service layer handles the business logic and mapping from domain model to DTO.  
+  For now I choose to follow the idea of having domain models that are not used in the controllers. The service layer handles the business logic and handles the mapping from domain model to DTO.  
   Automapper is instantiated in the startup.cs file.  
   
   DATABASE FIRST:  
