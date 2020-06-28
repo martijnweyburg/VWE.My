@@ -6,6 +6,20 @@ This is the repository with an API for
 - Getting a vehicle by registration number from a database
 - Updating a vehicle by id. 
 
+ HOW TO RUN THE APPLICATION:   
+  I implemented Swagger for testing purposes. This is very simple to use.  
+  - Start up the application in Visual studio
+  - The UI of Swagger will be started. Here you can test the different functions.
+  - Just click on a REST function and it will expand.
+  - Click on "try it out". 
+  - Now you can fill in the Url parameters and the form values (in case of the update function:JSON Format)
+  - Click on Execute. The result will appear.
+    
+  CONNECTION STRING:  
+  The connection string (VWEDatabase) can be changed in: 
+  the appsettings.json file.
+  Project: VWE.My.Web  
+
 GETTING ALL VEHICLES:  
   - Paging returns a maximum of 10 records per call  
     That means: if you fill in 12 pages, it will only return 10 pages.  
@@ -15,21 +29,7 @@ IN CASE OF UPDATING VEHICLES:
   The construction must be between 1885 and the current year.  
   That means: 1885 is not allowed and the current year is also not allowed.  
   For update I used the year as input (not an entire date). This means that the updated vehicle date will contain a new year, but still the old month and the old day.  
-      Update 2020-11-01 with 2015 as year will become 2015-11-01
-      
- HOW TO RUN THE APPLICATION:   
-  I used Swagger for testing purposes. This is very simple to use.  
-  - Start up the application in Visual studio
-  - The UI of Swagger will be started. Here you can test the different functions.
-  - Just click on one and it will expand.
-  - Click on "try it out". 
-  - Now you can fill in the Url parameters and the form values (in case of the update function)
-  - Click on Execute. The result will appear.
-    
-  CONNECTION STRING:  
-  The connection string (VWEDatabase) can be changed in: 
-  the appsettings.json file.
-  Project: VWE.My.Web
+      Update 2020-11-01 with 2015 as year will become 2015-11-01  
   
   UNIT Testing:  
   This app contains a unittest project.
