@@ -12,7 +12,9 @@ This is the repository with an API for
   - The UI of Swagger will be started. Here you can test the different functions.
   - Just click on a REST function and it will expand.
   - Click on "try it out". 
+  ![alt text](https://github.com/martijnweyburg/VWE.My/blob/master/SwaggerTry_UI.png?raw=true)
   - Now you can fill in the Url parameters and the form values (in case of the update function:JSON Format)
+  ![alt text](https://github.com/martijnweyburg/VWE.My/blob/master/SwaggerForm_UI.png?raw=true)
   - Click on Execute. The result will appear.
     
   CONNECTION STRING:  
