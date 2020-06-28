@@ -40,6 +40,8 @@ UPDATING VEHICLES REST CALL:
   The following components are tested:  
    - Service layer with business logic
    - Validation attribute concerning the date validation.  
+  
+  
   I've mocked the repository objects, so we don't have a database dependency in our unittests. In this way we can test the service layer only.  
   For now I didn't test te controllers. There is no business logic in it.  
   
