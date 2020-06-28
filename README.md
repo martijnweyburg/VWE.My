@@ -39,10 +39,11 @@ IN CASE OF UPDATING VEHICLES:
   
   Technical details:  
   This app uses:
-  - .NET Core
+  - .NET Core 3.1
   - Swagger and Swashbuckle
   - .NET Core entity framework: Database first
   - Automapper for mapping DTO files to Domain models and Vice versa
+  - Moq for mocking Repository objects in Unit tests
   
   REPOSITORY PATTERN:  
   I've implemented a Repository pattern with a generic base repository for handling database transactions  
