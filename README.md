@@ -34,10 +34,14 @@ UPDATING VEHICLES REST CALL:
   For instance: Update 2020-11-01 with 2015 as year will become 2015-11-01  
   
   
-  UNIT Testing:  
-  This app contains a unittest project.
-  VWE.My.Tests
-  I've mocked the repository objects, so we don't have a database dependency in our unittests.
+  UNIT Testing:    
+  This app contains a unittest project.  
+  VWE.My.Tests  
+  The following components are tested:  
+   - Service layer with business logic
+   - Validation attribute concerning the date validation.  
+  I've mocked the repository objects, so we don't have a database dependency in our unittests. In this way we can test the service layer only.  
+  For now I didn't test te controllers. There is no business logic in it.  
   
   Technical details:  
   This app uses:
