@@ -8,7 +8,7 @@ This is the repository with an API for
 
 GETTING ALL VEHICLES:  
   - Paging returns a maximum of 10 records per call  
-    That means, if you give in 12 pages, it will only return 10 pages.  
+    That means: if you fill in 12 pages, it will only return 10 pages.  
     
 IN CASE OF UPDATING VEHICLES:      
   You can update the color and the construction year of the vehicle.  
